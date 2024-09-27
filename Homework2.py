@@ -41,6 +41,7 @@ number = input("Введите число от 1 до 12: \n")
 if number.isdigit() or number > "12" or number < "1":
     number = int(number)
     if number <= 2 or number == 12:
+        
         print("Зима")
     elif number == 3 or number == 4 or number == 5:
         print("Весна")
