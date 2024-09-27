@@ -23,14 +23,30 @@ else:
 
 print("-------------number3------------")
 
+""" number 3
 number = input("Введите число от 1 до 12: \n")
 Months = ["Январь - Зима", "Февраль - Зима", "Март - Весна", "Апрель - Весна", "Май - Весна", "Июнь - Лето", "Июль - Лето", \
           "Август - Лето", "Сентябрь - Осень", "Октябрь - Осень", "Ноябрь - Осень", "Декабрь - Зима"]
 if number.isdigit():
-    number = int(number)          
+    number = int(number)
     if number >= 1 and number <= 12:
         print(Months[number-1])
     else:
         print("Такого не существует. Всего 12 месяцев в году!")
+else:
+    print("Введи целое число от 1 до 12!!!")
+"""
+
+number = input("Введите число от 1 до 12: \n")
+if number.isdigit() or number > "12" or number < "1":
+    number = int(number)
+    if number <= 2 or number == 12:
+        print("Зима")
+    elif number == 3 or number == 4 or number == 5:
+        print("Весна")
+    elif number == 6 or number == 7 or number == 8:
+        print("Лето")
+    else:
+        print("Осень")
 else:
     print("Введи целое число от 1 до 12!!!")
