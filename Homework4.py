@@ -28,20 +28,21 @@ if l.find("{") and l.find("}"):
 
 # l = 'ываыаыва(нннн)ыавыва'
 # l1 = ""
-# for i in l:
-# 	if i == "(":
-# 		print(l1)
+# for i in range(len(l)-1):
+# 	if l[i] == "(":
+# 		while l[i] != ")":
+
+# 	if l[i] == ")":
+# 		break
+# print(l1)
 
 print("--------------number 3--------------")
 
-l = "притмфьыао лфьлфмьдл акация фдэээдвыьжд адаптация"
+l = "притмфьыао лфьлфмьдл акация фдэээдвыьжд адаптация пра"
 lst = l.split(" ")
 for i in lst:
 	if (i[0] == "а" or i[0] == "А") and i[-1] == "я":
-		if i == lst[-1]:
-			print(i, end=".")
-		else:
-			print(i, end=", ")
+		print(i, end=" ")
 
 
 
