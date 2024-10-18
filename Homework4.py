@@ -42,7 +42,7 @@ l = "притмфьыао лфьлфмьдл акация фдэээдвыьжд
 lst = l.split(" ")
 for i in lst:
 	if (i[0] == "а" or i[0] == "А") and i[-1] == "я":
-		print(i, end=" ")
+		print(i, end="\t")
 
 
 
