@@ -1,3 +1,4 @@
+print("-----------Number 1-----------")
 from math import gcd
 
 class Fraction:
@@ -58,4 +59,3 @@ print(f1 - f2)
 print(f1 * f2)
 print(f1 / f2)
 print(f1.value)
-
